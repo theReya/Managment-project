@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #003366; /* لون نص أزرق داكن */
+    background-color: #e3f2fd; /* خلفية زرقاء فاتحة خفيفة */
+}
+
+.navbar {
+    background-color: #0288d1; /* لون أزرق ثابت */
+    border-bottom: 1px solid #01579b; /* حد سفلي بلون أزرق أغمق */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: flex-end; /* ترتيب العناصر من اليمين لليسار */
+    align-items: center;
+    padding: 10px 20px; /* زيادة الحشو */
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: #ffffff; /* لون نص أبيض */
+    font-size: 18px;
+    font-weight: bold; /* نص عريض */
+    transition: color 0.3s, border-bottom 0.3s; /* تأثير تمرير سلس */
+    margin: 0 20px; /* مسافة متوسطة بين الروابط */
+}
+
+.navbar-link:hover {
+    color: #e1f5fe; /* تغيير لون النص عند التمرير إلى لون أزرق فاتح */
+    border-bottom: 2px solid #e1f5fe; /* إضافة خط سفلي عند التمرير */
+}
+
+main {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    background-color: #bbdefb; /* خلفية زرقاء فاتحة */
+    min-height: 80vh;
+    margin-top: 50px; /* لتجنب التداخل مع الشريط العلوي الثابت */
+}
+
+.intro {
+    max-width: 500px;
+    text-align: right;
+    padding: 20px;
+}
+
+.intro h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #003366; /* لون نص أزرق داكن */
+}
+
+.intro p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #003366; /* لون نص أزرق داكن */
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column; /* جعل الأزرار تحت بعضها */
+    align-items: flex-end; /* محاذاة الأزرار إلى اليمين */
+    margin-bottom: 20px;
+}
+
+.explore-button, .recycle-button, .additional-button {
+    text-decoration: none;
+    padding: 12px 24px;
+    color: #fff;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    font-size: 18px;
+    margin-bottom: 10px; /* مسافة بين الأزرار */
+    background-color: #0288d1; /* لون الأزرار أزرق داكن */
+}
+
+.explore-button:hover, .recycle-button:hover, .additional-button:hover {
+    background-color: #01579b; /* تغيير اللون عند المرور فوق الزر إلى أزرق أغمق */
+}
+
+.illustration {
+    max-width: 600px;
+    height: 250px;
+    background-color: #e3f2fd; /* خلفية زرقاء فاتحة */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* تأثير ظل خفيف */
+}
+
+.placeholder-illustration {
+    font-size: 18px;
+    color: #003366; /* لون نص أزرق داكن */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff; /* خلفية بيضاء */
+    color: #0288d1; /* لون نص أزرق داكن */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* تأثير ظل خفيف */
+}
