@@ -6,45 +6,57 @@ body {
     color: #004d40;
     background-color: #e0f2f1;
 }
-
 /* تعديل الشريط العلوي */
-.navbar {
-    background-color: #00796b; /* استخدام لون موحد للخلفية */
-    border-bottom: 3px solid #005b4f;
+header {
+    background-color: #00796b; /* اللون الخلفي */
+    padding: 15px 30px;
     position: fixed;
+    width: 98%;
     top: 0;
-    width: 100%;
     z-index: 1000;
-    padding: 15px 0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* ظل أسفل الشريط */
+    border-bottom: 3px solid #005b4f; /* حد سفلي */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* تعديل الحاوية */
+/* تنسيق الروابط داخل الشريط العلوي */
+.navbar-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.navbar-link:hover {
+    background-color: #004d40;
+    transform: scale(1.05);
+}
+
 .navbar-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    width: 100%;
 }
 
-/* روابط الشريط العلوي بتفاعل أقل */
-.navbar-link {
-    text-decoration: none;
-    color: #ffffff; /* استخدام نفس اللون للنص */
-    font-size: 18px;
-    font-weight: bold;
-    margin: 0 20px;
-    padding: 10px 20px;
-    background-color: #00796b; /* نفس اللون للخلفية */
-    border-radius: 8px;
-    transition: color 0.3s, border-bottom 0.3s;
+.logo {
+    position: absolute;
+    top: 70px; /* المسافة من الأعلى */
+    right: 10px; /* المسافة من اليمين */
 }
 
-.navbar-link:hover {
-    color: #e0f2f1; /* تغيير طفيف عند التحويم */
-    border-bottom: 2px solid #e0f2f1; /* تفاعل طفيف بدون تغيير حجم أو شكل الرابط */
+.home-link {
+    margin-right: auto; /* يجعل "الرئيسية" على اليسار */
 }
 
+.contact-link {
+    margin-left: auto; /* يجعل "تواصل معنا" على اليمين */
+}
 /* إعدادات الـ main */
 main {
     display: flex;
